@@ -20,6 +20,9 @@ provider "aws" {
 
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "lordwales-bucket"  # bucket name on S3
+  versioning {
+    enabled = true
+  }
 }
 
 #Use ~ terraform plan and terraform apply to execute the file 
