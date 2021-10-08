@@ -25,4 +25,9 @@ resource "aws_s3_bucket" "my_bucket" {
   }
 }
 
+resource "aws_iam_user" "my_user" {
+  name = "my_terraform_user"
+  
+}
+
 #Use ~ terraform plan and terraform apply to execute the file 
